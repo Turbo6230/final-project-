@@ -1,0 +1,87 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+body {
+    background-color:rgb(184, 184, 255);
+}
+input:valid {
+    border-color: rgb(216, 213, 213);
+   }
+   input:invalid {
+    border-color: rgb(254, 74, 74);
+   }
+   table {
+    font-size: 16px;
+    border: 1px;
+    align-items: center;
+    align-content: center;
+    color: rgb(0, 31, 58);
+   }
+   #cont {
+    display:flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: start;
+    align-items: stretch;
+    align-content: stretch;
+    background-color: rgb(86, 1, 98);
+    padding: 10px;
+    height: 300px;
+}
+#cont > div {
+    background-color:rgb(3, 3, 118);
+    border: 2px solid rgb(175, 175, 175);
+}
+p , div {
+    font-size: 20px;
+    color: rgb(2, 41, 75);
+}
+h1 {
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+}
+h3 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    color: rgb(1, 8, 15);
+}
+@media only screen and (max-width: 900px) {
+    table{
+        border: 12px;
+        padding: 2px;
+        margin: 2px;
+        border: 12px solid rgb(209, 209, 209);
+        font-size: 13px white;
+    }
+}
+@media only screen and (min-width: 200px) {
+    table{
+        border: 6px;
+        padding: 0.5px;
+        margin: 0.5px;
+        border: 6px solid rgb(159, 159, 159);
+        font-size: 8px white;
+    }
+}
+button {
+    background-color: aliceblue;
+    font-size: 8px black;
+
+}
+@media only screen and (max-width: 900px) {
+    button {
+    background-color: aliceblue;
+    font-size: 8px black;
+    }
+}
+@media only screen and (min-width: 200px) {
+    button {
+        background-color: aliceblue;
+        font-size: 6px black;
+        }
+}
+form {
+    border-color: rgb(216, 213, 213);
+    font-size: 14;
+    color: aliceblue;
+}

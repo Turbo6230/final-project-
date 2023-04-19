@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="style_symptomTracker.css" />
+<script type="text/javascript" src="./SymptomTable.js"></script>
+</head>
+<body>
+    <h1>What is Cochlear Hydrops and Meniere's Disease? </h1>
+    <p>
+        Cochlear Hydrops is an inner ear disorder where you have fluid retension in the inner ear cause the symptoms of ringing in the ears,
+        pressure in the ear, and hearing loss. Meniere's Diease is same thing but with episodes of vertigo. What causes them is unknown and both of them are rare. If you want more information, here's a link:
+        
+        <a href="https://www.frontiersin.org/articles/10.3389/fsurg.2021.680260/full#:~:text=Cochlear%20hydrops%20or%20cochlear%20Meniere's,Meniere's%20disease%20without%20the%20vertigo.">link</a>
+    </p>   
+    <p>
+        Directions:
+            You fill out the table by editing the three rows by pressing the edit button. If you need more rows then you press the add more rows buttons.
+    </p>
+<div id="foo">
+<table id="record">
+<tr>
+    <th>Date of occurance</th>
+    <th>Ringing in the ear</th>
+    <th>How long</th>
+    <th>vertigo</th>
+    <th>How long</th>
+    <th>Pressure in the ear</th>
+    <th>How long</th>
+    <th>Hearing Loss during attack</th>
+    <th>How long</th>
+    <th>Migriane</th>
+    <th>How long</th>
+</tr>
+
+<tr id="row1">
+<td id="occurance_row1">0</td>
+<td id="tinnitus_row1">0</td>
+<td id="duration1_row1">0</td>
+<td id="vertigo_row1">0</td>
+<td id="duration2_row1">0</td>
+<td id="pressure_row1">0</td>
+<td id="duration3_row1">0</td>
+<td id="deafness_row1">0</td>
+<td id="duration4_row1">0</td>
+<td id="migriane_row1">0</td>
+<td id="duration5_row1">0</td>
+
+<td>
+<input type="button" id="edit_button1" value="Edit" class="edit" onclick="edit_row('1')">
+<input type="button" id="save_button1" value="Save" class="save" onclick="save_row('1')">
+<input type="button" value="Delete" class="delete" onclick="delete_row('1')">
+</td>
+</tr>
+
+<td id="occurance_row2">0</td>
+<td id="tinnitus_row2">0</td>
+<td id="duration1_row2">0</td>
+<td id="vertigo_row2">0</td>
+<td id="duration2_row2">0</td>
+<td id="pressure_row2">0</td>
+<td id="duration3_row2">0</td>
+<td id="deafness_row2">0</td>
+<td id="duration4_row2">0</td>
+<td id="migriane_row2">0</td>
+<td id="duration5_row2">0</td>
+<td>
+<input type="button" id="edit_button2" value="Edit" class="edit" onclick="edit_row('2')">
+<input type="button" id="save_button2" value="Save" class="save" onclick="save_row('2')">
+<input type="button" value="Delete" class="delete" onclick="delete_row('2')">
+</td>
+</tr>
+
+<tr id="row3">
+    <td id="occurance_row2">0</td>
+    <td id="tinnitus_row2">0</td>
+    <td id="duration1_row2">0</td>
+    <td id="vertigo_row2">0</td>
+    <td id="duration2_row2">0</td>
+    <td id="pressure_row2">0</td>
+    <td id="duration3_row2">0</td>
+    <td id="deafness_row2">0</td>
+    <td id="duration4_row2">0</td>
+    <td id="migriane_row2">0</td>
+    <td id="duration5_row2">0</td>
+<td>
+<input type="button" id="edit_button3" value="Edit" class="edit" onclick="edit_row('3')">
+<input type="button" id="save_button3" value="Save" class="save" onclick="save_row('3')">
+<input type="button" value="Delete" class="delete" onclick="delete_row('3')">
+</td>
+</tr>
+
+<tr>
+<td><input type="text" id="new_occurance"></td>
+<td><input type="text" id="new_tinnitus"></td>
+<td><input type="text" id="new_duration1"></td>
+<td><input type="text" id="new_vertigo"></td>
+<td><input type="text" id="new_duration2"></td>
+<td><input type="text" id="new_pressure"></td>
+<td><input type="text" id="new_duration3"></td>
+<td><input type="text" id="new_deafness"></td>
+<td><input type="text" id="new_duration4"></td>
+<td><input type="text" id="new_migriane"></td>
+<td><input type="text" id="new_duration5"></td>
+<td><input type="button" class="add" onclick="console.log('blah'); add_row();" value="Add Row"></td>
+</tr>
+
+</table>
+</div>
+
+</body>
+</html>
